@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Bhavyashree S K</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: var(--bg-main);
+            border: 4px solid var(--primary);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left { left: 0; }
+        .right { left: 50%; }
+        .right::after { left: -10px; }
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: var(--bg-card);
+            position: relative;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+        }
+        @media screen and (max-width: 600px) {
+            .timeline::after { left: 31px; }
+            .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+            .timeline-item::after { left: 21px; }
+            .right { left: 0%; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">BHAVYASHREE<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="mailto:bhavyabhavya8105@gmail.com" class="btn btn-primary">Hire Me</a>
+    </nav>
+
+    <section class="education">
+        <h2 class="section-title">My Education</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3 style="color: var(--primary);">Bachelor of Computer Application</h3>
+                    <p style="font-weight: 600;">2023 - 2026</p>
+                    <p>Government First Grade College, Tiptur</p>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">Focused on Software Development, Data Structures, and Database Management.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3 style="color: var(--primary);">Student Internship</h3>
+                    <p style="font-weight: 600;">Mar 2026 - Jun 2026</p>
+                    <p>AIKSHETRA TECH SOLUTIONS PVT LTD</p>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">Worked on real-world security projects and algorithm optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/bhavyabhavya" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:bhavyabhavya8105@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:8105246106"><i class="fas fa-phone"></i></a>
+        </div>
+        <p>&copy; 2026 Bhavyashree S K. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
